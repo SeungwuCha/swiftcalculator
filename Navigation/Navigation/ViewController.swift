@@ -39,6 +39,8 @@ class ViewController: UIViewController {
     @IBOutlet weak var btnminus: UIButton!
     @IBOutlet weak var btnx: UIButton!
     @IBOutlet weak var btnclear: UIButton!
+    @IBOutlet weak var btndivide: UIButton!
+    @IBOutlet weak var btngob: UIButton!
     var num1:Int = 0
     var num2:Int = 0
     var numoper:Int = 0
@@ -98,6 +100,28 @@ class ViewController: UIViewController {
             //clear()
             var strText : String = edit1.text
             checkout(strText);
+        }else if sender == btndivide{
+            if numoper == 0
+            {
+                getnum1()
+                
+            }else
+            {
+                setResult()
+            }
+            numoper = 4
+            oper = true
+        }else if sender == btngob{
+            if numoper == 0
+            {
+                getnum1()
+                
+            }else
+            {
+                setResult()
+            }
+            numoper = 3
+            oper = true
         }
     }
     func setResult(){
@@ -112,6 +136,14 @@ class ViewController: UIViewController {
         else if(numoper == 2){
             var minus = num1 - num2
             edit1.text = "\(minus)"
+        }
+        else if(numoper == 3){
+            var gob = num1 * num2
+            edit1.text = "\(gob)"
+        }
+        else if(numoper == 4){
+            var divide = num1 / num2
+            edit1.text = "\(divide)"
         }
         //마지막 입력값 변경
         num2 = num1;

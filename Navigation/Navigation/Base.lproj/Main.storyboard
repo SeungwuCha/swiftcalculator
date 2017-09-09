@@ -158,6 +158,26 @@
                                     <action selector="btnclick:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="7fI-6f-SYN"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="Rsf-as-QXb">
+                                <rect key="frame" x="206" y="257" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="X">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="btnclick:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="YvF-hW-b4B"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="sox-nb-CjU">
+                                <rect key="frame" x="206" y="295" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="/">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="btnclick:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="ypM-2D-g0e"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
@@ -180,6 +200,8 @@
                         <outlet property="btn8" destination="de0-6u-wDg" id="zQT-HR-QAP"/>
                         <outlet property="btn9" destination="UYg-ky-OHL" id="Ono-So-iHu"/>
                         <outlet property="btnclear" destination="ZDe-Wc-WWd" id="n8C-YB-Ci6"/>
+                        <outlet property="btndivide" destination="Rsf-as-QXb" id="gLm-zL-x5L"/>
+                        <outlet property="btngob" destination="Rsf-as-QXb" id="XMn-gA-g1N"/>
                         <outlet property="btnminus" destination="Y6E-7X-07a" id="8Gj-ci-TIz"/>
                         <outlet property="btnplus" destination="JXH-bU-lmY" id="0dz-Ke-GYL"/>
                         <outlet property="btnx" destination="7pw-hb-gEH" id="Ybv-kp-uNC"/>
